@@ -10,6 +10,7 @@ import Basic from './Basic';
 import AuthProvider from './AuthProvider';
 import Login from './Login';
 import Register from './Register';
+import Addproducts from './Addproducts';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>
+      },
+      {
+        path: "/addServices",
+        element: <Addproducts></Addproducts>
       }
     ]
   },

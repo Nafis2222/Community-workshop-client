@@ -37,7 +37,7 @@ const handleClick = () =>{
           <div tabIndex={0} role="button" className="btn btn-sm bg-amber-600 btn-ghost"><NavLink to="/">Dashboard</NavLink></div>
           <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
             <li><Link to="/">My services</Link></li>
-            <li><Link to="/">Add services</Link></li>
+            <li><Link to="/addServices">Add services</Link></li>
             <li><Link to="/">My-schedules</Link></li>
 
           </ul>
@@ -59,7 +59,7 @@ const handleClick = () =>{
   <div tabIndex={0} role="button" className="btn ml-2 btn-sm bg-amber-600 btn-ghost"><NavLink to="/">Dashboard</NavLink></div>
   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><Link to="/">My services</Link></li>
-    <li><Link to="/">Add services</Link></li>
+    <li><Link to="/addServices">Add services</Link></li>
     <li><Link to="/">My-schedules</Link></li>
   </ul>
   </div>

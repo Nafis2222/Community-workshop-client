@@ -1,8 +1,13 @@
 import { useContext } from "react";
 import { AuthContext } from "./AuthProvider";
+import UseAxiosPublic from "./Hooks/UasAxiosPublic";
+import 'react-toastify/dist/ReactToastify.css';
+
+import { ToastContainer, toast } from "react-toastify";
 
 const Addproducts = () => {
     const {userFinal} = useContext(AuthContext)
+    const axiosPublic = UseAxiosPublic()
     console.log(userFinal)
     const handlesubmit = e =>{
         e.preventDefault()
@@ -16,9 +21,24 @@ const Addproducts = () => {
         const description = form.get('description')
         console.log(name,email,price,image,serviceName,serviceArea,description)
 
+        const Items = {
+            name,email,image,price,serviceName, serviceArea, description
+        }
+
+
+        axiosPublic.post('/addServices', Items)
+        .then(res=>{
+            console.log(res.data)
+            if(res.data?.insertedId){
+                toast.success("You have successfully booked an order", {
+                    theme: "colored"
+                  })
+            }
+        })
     }
     return (
         <div>
+
               <div className="bg-accent p-12 md:p-24">
             <h1 className="text-3xl font-extrabold">Form for Adding Services</h1>
         <form onSubmit={handlesubmit}>
@@ -100,7 +120,8 @@ const Addproducts = () => {
         </div>
         </form>
         </div> 
-            
+        <ToastContainer></ToastContainer>
+
         </div>
     );
 };

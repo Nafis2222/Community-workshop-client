@@ -3,8 +3,8 @@ import { AuthContext } from "./AuthProvider";
 import { useContext } from "react";
 
 const Navbar = () => {
-    const { userFinal} = useContext(AuthContext)
-    // console.log(userFinal)
+    const { userFinal,LogOut} = useContext(AuthContext)
+    console.log(userFinal)
    
 
 
@@ -49,7 +49,11 @@ const handleClick = () =>{
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      {navlinks}
+  
+       
+      {
+        userFinal ? <>
+           {navlinks}
       
       <div className="dropdown dropdown-end">
   <div tabIndex={0} role="button" className="btn ml-2 btn-sm bg-amber-600 btn-ghost"><NavLink to="/">Dashboard</NavLink></div>
@@ -58,9 +62,16 @@ const handleClick = () =>{
     <li><Link to="/">Add services</Link></li>
     <li><Link to="/">My-schedules</Link></li>
   </ul>
-</div>
-    </ul>
   </div>
+        </> :
+        <>{navlinks}</>
+      }
+       
+          </ul>
+
+    </div>
+
+
   <div className="navbar-end">
     
   {

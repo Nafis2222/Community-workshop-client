@@ -15,6 +15,7 @@ import ManageServices from './ManageServices';
 import AllService from './AllService';
 import SingleService from './SingleService';
 import FixedBooking from './FixedBooking';
+import Myschedules from './Myschedules';
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/fixedBooking/:id",
         element: <FixedBooking></FixedBooking>
+      },
+      {
+        path: "/mySchedules",
+        element: <Myschedules></Myschedules>
       }
     ]
   },

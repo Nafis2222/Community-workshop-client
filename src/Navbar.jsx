@@ -60,7 +60,7 @@ const handleClick = () =>{
   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><Link to="/addServices">Add services</Link></li>
     <li><Link to="/manageServices">Manage services</Link></li>
-    <li><Link to="/">My-schedules</Link></li>
+    <li><Link to="/mySchedules">My-schedules</Link></li>
   </ul>
   </div>
         </> :

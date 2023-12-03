@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
+import Banner from "./Banner";
 
 const Basic = () => {
     return (
         <div>
-            <h1>Bangladses</h1>
+            <Banner></Banner>
             
         </div>
     );

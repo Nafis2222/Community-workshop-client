@@ -16,11 +16,13 @@ import AllService from './AllService';
 import SingleService from './SingleService';
 import FixedBooking from './FixedBooking';
 import Myschedules from './Myschedules';
+import Error from './Error';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",

@@ -19,11 +19,11 @@ const PopularServices = () => {
             <h1 className="text-3xl text-center">Popular Services</h1>
 
             
-           <div className="grid grid-cols-2 gap-4">
+           <div className="grid md:grid-cols-2 gap-4">
             {
                 service?.map(just=>
                     <div key={just?._id}>
-                    <div  className="card h-68 card-side bg-base-100 shadow-xl">
+                    <div  className="card h-68 md:card-side bg-base-100 shadow-xl">
                     <figure><img className="h-60 w-full" src={just?.serviceImage} alt="Movie"/></figure>
                     <div className="card-body">
                       <h2 className="card-title">{just?.serviceName}</h2>

@@ -5,6 +5,7 @@ import AboutUs from "./AboutUs";
 import PopularServices from "./PopularServices";
 import Contact from "./Contact";
 import Bonus from "./Bonus";
+import Review from "./Review";
 
 const Basic = () => {
     return (
@@ -14,6 +15,7 @@ const Basic = () => {
             <AboutUs></AboutUs>
             <Contact></Contact>
             <Bonus></Bonus>
+            <Review></Review>
             
         </div>
     );

@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import UseAxiosPublic from "./Hooks/UasAxiosPublic";
 import { useContext, useEffect, useState } from "react";
-import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from "./AuthProvider";
 import Swal from "sweetalert2";

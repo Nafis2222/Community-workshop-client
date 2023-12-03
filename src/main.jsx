@@ -12,6 +12,7 @@ import Login from './Login';
 import Register from './Register';
 import Addproducts from './Addproducts';
 import ManageServices from './ManageServices';
+import AllService from './AllService';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/manageServices", 
         element: <ManageServices></ManageServices>
+      },
+      {
+        path: "/allService",
+        element: <AllService></AllService>
       }
     ]
   },

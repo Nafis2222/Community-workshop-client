@@ -10,7 +10,7 @@ const Navbar = () => {
 
     const navlinks = <>
     <li><NavLink className="btn btn-ghost align-middle  btn-sm" to="/">Home</NavLink></li>
-    <li><NavLink className="btn btn-ghost align-middle  btn-sm" to="/">Services</NavLink></li>
+    <li><NavLink className="btn btn-ghost align-middle  btn-sm" to="/allService">All Services</NavLink></li>
     </>
 
 const handleClick = () =>{

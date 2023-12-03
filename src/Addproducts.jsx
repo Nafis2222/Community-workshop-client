@@ -48,7 +48,7 @@ const Addproducts = () => {
               <span className="label-text font-semibold">Your Name</span>
             </label>
             <label className="input-group">
-              <input type="text" placeholder="Type your name" defaultValue={userFinal?.displayname} name="name" className="input input-bordered w-full" />
+              <input type="text" required placeholder="Type your name" defaultValue={userFinal?.displayname} name="name" className="input input-bordered w-full" />
             </label>
             </div>
             <div className="form-control md:w-1/2">
@@ -56,7 +56,7 @@ const Addproducts = () => {
               <span className="label-text font-semibold">Your email</span>
             </label>
             <label className="input-group">
-              <input type="email" name="email" defaultValue={userFinal?.email} placeholder="Type your email" className="input input-bordered w-full" />
+              <input type="email" required name="email" defaultValue={userFinal?.email} placeholder="Type your email" className="input input-bordered w-full" />
             </label>
             </div>
         </div>
@@ -67,7 +67,7 @@ const Addproducts = () => {
               <span className="label-text font-semibold">Picture Url</span>
             </label>
             <label className="input-group">
-              <input type="url" placeholder="Enter your img url" name="image" className="input input-bordered w-full" />
+              <input type="url" required placeholder="Enter your img url" name="image" className="input input-bordered w-full" />
             
             </label>
             </div>
@@ -76,7 +76,7 @@ const Addproducts = () => {
               <span className="label-text font-semibold">price</span>
             </label>
             <label className="input-group">
-              <input type="number" name="price" placeholder="Enter  price" className="input input-bordered w-full" />
+              <input type="number" required name="price" placeholder="Enter  price" className="input input-bordered w-full" />
             </label>
             </div>
         </div>
@@ -88,7 +88,7 @@ const Addproducts = () => {
               <span className="label-text font-semibold">Service name</span>
             </label>
             <label className="input-group">
-              <input type="text" name="serviceName"  placeholder="Enter your chosen service name" className="input input-bordered w-full" />
+              <input type="text" required name="serviceName"  placeholder="Enter your chosen service name" className="input input-bordered w-full" />
             </label>
             </div>
             <div className="form-control  md:w-1/2">
@@ -96,7 +96,7 @@ const Addproducts = () => {
               <span className="label-text font-semibold">Service Area</span>
             </label>
             <label className="input-group">
-              <input type="text" name="serviceArea"  placeholder="Enter your chosen service Area" className="input input-bordered w-full" />
+              <input type="text" required name="serviceArea"  placeholder="Enter your chosen service Area" className="input input-bordered w-full" />
             </label>
             </div>
         </div>
@@ -107,7 +107,7 @@ const Addproducts = () => {
               <span className="label-text font-semibold">Description</span>
             </label>
             <label className="input-group">
-              <input type="text" name="description"  placeholder="Give us some details about it" className="input input-bordered py-5 w-full" />
+              <input type="text" required name="description"  placeholder="Give us some details about it" className="input input-bordered py-5 w-full" />
             </label>            </div>
          
         </div>

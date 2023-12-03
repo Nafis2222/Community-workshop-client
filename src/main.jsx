@@ -13,6 +13,8 @@ import Register from './Register';
 import Addproducts from './Addproducts';
 import ManageServices from './ManageServices';
 import AllService from './AllService';
+import SingleService from './SingleService';
+import FixedBooking from './FixedBooking';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
       {
         path: "/allService",
         element: <AllService></AllService>
+      },
+      {
+        path: "/allServices/:id", 
+        element: <SingleService></SingleService>
+      },
+      {
+        path: "/fixedBooking/:id",
+        element: <FixedBooking></FixedBooking>
       }
     ]
   },

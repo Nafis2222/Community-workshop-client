@@ -12,6 +12,8 @@ const PopularServices = () => {
         })
         console.log(service?.length)
     },[])
+
+    
     return (
         <div>
             <h1 className="text-3xl text-center">Popular Services</h1>
@@ -32,7 +34,7 @@ const PopularServices = () => {
                             <img className="w-16 h-16 rounded-full" src={just?.serviceProvider?.image} alt="" />
                             <h1 className="my-4">S.Provider : {just?.serviceProvider?.name}</h1>
                         </div>
-                        <Link className="btn btn-link" to="/allService">View Details</Link>
+                        <Link  className="btn btn-link" to={`/allServices/${just?._id}`}>View Details</Link>
 
                       </div>
 

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import UseAxiosPublic from "./Hooks/UasAxiosPublic";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from "react-router-dom";
 
 
 const ManageServices = () => {
@@ -27,12 +28,12 @@ const ManageServices = () => {
         })
     }
 
-    const handleUpdate = id =>{
-        axiosPublic.put(`/addServices/${id}`)
-        .then(res=>{
-            console.log(res.data)
-        })
-    }
+    // const handleUpdate = id =>{
+    //     axiosPublic.put(`/addServices/${id}`)
+    //     .then(res=>{
+    //         console.log(res.data)
+    //     })
+    // }
     return (
         <div>
             <div className="overflow-x-auto">
@@ -81,7 +82,7 @@ const ManageServices = () => {
         </td>
         <td>{single?.serviceName}</td>
         <th>
-          <button onClick={()=>handleUpdate(single?._id)} className="btn btn-ghost btn-xs">Update</button>
+         <Link to={`/update/${single?._id}`}> <button  className="btn btn-ghost btn-xs">Update</button> </Link>
         </th>
         <th>
           <button onClick={()=>handleDelete(single?._id)} className="btn btn-ghost btn-xs">Delete</button>

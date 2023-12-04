@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosPublic = axios.create({
-    baseURL: "http://localhost:5000/",
+    baseURL: "https://community-pi-three.vercel.app//",
 
 })
 const UseAxiosPublic = () => {

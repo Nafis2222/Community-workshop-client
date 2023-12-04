@@ -13,7 +13,7 @@ import { Rating } from "@smastrom/react-rating";
 const Review = () => {
     const [reviewss,setreviews] = useState()
     useEffect(()=>{
-        fetch('http://localhost:5000/story')
+        fetch('https://community-pi-three.vercel.app/story')
         .then(res=>res.json())
         .then(data=>{setreviews(data)})
     },[])

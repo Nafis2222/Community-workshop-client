@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import UseAxiosPublic from "./Hooks/UasAxiosPublic";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
+import { AuthContext } from "./AuthProvider";
 
 
 const ManageServices = () => {
+    const {userFinal} = useContext(AuthContext)
     const [manageData,setManageData] = useState()
     const axiosPublic = UseAxiosPublic()
     useEffect(()=>{
-        axiosPublic.get('/addServices')
+        axiosPublic.get(`/addServices?email=${userFinal?.email}`)
         .then(res=>{
             setManageData(res.data)
         })

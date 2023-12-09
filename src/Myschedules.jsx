@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import UseAxiosPublic from "./Hooks/UasAxiosPublic";
 import Swal from "sweetalert2";
 import { list } from "postcss";
+import { AuthContext } from "./AuthProvider";
 
 const Myschedules = () => {
+    const {userFinal} = useContext(AuthContext)
+
     const [last,setLast] = useState()
     const axiosPublic = UseAxiosPublic()
     const handleClick = (e) =>{
@@ -14,7 +17,7 @@ const Myschedules = () => {
     }
 
     useEffect(()=>{
-        axiosPublic.get('/bookedServices')
+        axiosPublic.get(`/bookedServices?email=${userFinal?.email}`)
         .then(res=>{
             setLast(res.data)
         })

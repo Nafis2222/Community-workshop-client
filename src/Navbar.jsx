@@ -45,7 +45,7 @@ const handleClick = () =>{
        
       </ul>
     </div>
-    <img className="w-44 h-20 rounded-full" src="https://i.ibb.co/7n0wV8P/download-4.png" alt="" />
+    <img className="w-44 h-20 rounded-full" src="https://i.ibb.co/ZSTcqrV/download-4.png" alt="" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -84,7 +84,7 @@ const handleClick = () =>{
                 
                 : 
                 <>
-                <img className='w-12 mr-2 h-12' src="https://i.ibb.co/J50xnVF/user.png" alt="" />
+                <img className='w-12 mr-2 h-12' src="https://i.ibb.co/j3x2YgT/download-7.png" alt="" />
                 <Link to="/login"><button className='btn'>Login</button></Link>
                 </>
 

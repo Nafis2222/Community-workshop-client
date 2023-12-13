@@ -22,8 +22,8 @@ const Review = () => {
             <div>
              <div className='mb-6'>
           <div className='text-center mx-auto items-center my-8'>
-            <h1 className='text-[#D99904]'>---Some special story from our client---</h1>
-            <p className='text-4xl  mx-auto border-y-2 border-black w-3/4 my-3 py-3 '>Tourist have some Special stories</p>
+            <h1 className='text-[#D99904]'>---Some special review from our client---</h1>
+            <p className='text-4xl  mx-auto border-y-2 border-black w-3/4 my-3 py-3 '>Clients have some Special reviews</p>
           </div>
             </div>
 
